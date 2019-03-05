@@ -12,8 +12,8 @@ contract Ymchain is ERC20, ERC20Detailed, Ownable {
 
 
     constructor(address _owner) Ownable(_owner) public ERC20Detailed(_name, _symbol, _decimals) {
+		_mint(_owner, _totalSupply);
 
-        emit Transfer(address(0), _owner, _totalSupply);
     }
 
 }

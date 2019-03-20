@@ -53,6 +53,9 @@ contract XyhuyuGames is WhitelistedRole {
 	//设置平台账号下的所有游戏账号ID
 	function setMemberGameIds(uint memberId, uint gameId) onlyWhitelisted public {
 		uint [] storage memberGameIdsStorage = _memberGameIdsMapping[memberId];
+		for (uint i = 0; i < memberGameIdsStorage.length; i++) {
+			require(gameId != memberGameIdsStorage[i], "gameId already exists.");
+		}
 		memberGameIdsStorage.push(gameId);
 	}
 

@@ -4,7 +4,7 @@ import 'openzeppelin-solidity/contracts/token/ERC20/ERC20.sol';
 import 'openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol';
 import "./Ownable.sol";
 
-contract Ymchain is ERC20, ERC20Detailed, Ownable {
+contract YMChainToken is ERC20, ERC20Detailed, Ownable {
 	string private _name = "YMChainToken";
 	string private _symbol = "YMCoin";
 	uint8 private _decimals = 18;

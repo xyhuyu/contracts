@@ -6,7 +6,7 @@ import "./Ownable.sol";
 
 contract YMChainToken is ERC20, ERC20Detailed, Ownable {
 	string private _name = "YMChainToken";
-	string private _symbol = "YMCoin";
+	string private _symbol = "YMC";
 	uint8 private _decimals = 18;
 	uint256 private _totalSupply = 2000000000 * (10 ** uint256(_decimals));
 
